@@ -2,15 +2,16 @@ body
   background: $white
   padding: 0
   margin: 0
+  @include font
 
 .wrapper
   height: 100vh
-  width: 100%
-  display: -webkit-flex
-  display: -ms-flex
+  max-width: 100vh
   display: flex
 
 .landing-image
   flex-basis: 47%
-  img
-    height: 100%
+  &__picture
+    max-width: 100%
+    img
+      height: 100%
