@@ -130,7 +130,9 @@ body {
     @media (max-width: 767px) {
       .landing-content__landing-text {
         width: 100%;
-        line-height: 160%; } }
+        line-height: 160%; }
+        .landing-content__landing-text br {
+          display: none; } }
   .landing-content__icons-block {
     display: -webkit-box;
     display: -ms-flexbox;
