@@ -44,7 +44,7 @@ body
 
   &__logo-title
     @include resetmargin
-    text-transform: capitalize
+    text-transform: lowercase
     color: $grey
     font-size: 13px
     padding-left: 30px
@@ -52,7 +52,7 @@ body
     border-left: 1px solid #c4c4c4
 
   &__text-block
-    margin-top: 22vh
+    margin-top: 16vh
     @include media("<large")
       margin-top: 7.5vh
     @include media("<small")
@@ -78,11 +78,15 @@ body
     padding-right: 70px
     line-height: 170%
     @include media("<large")
-      padding-right: 0
+      padding-right: 10%
       margin-top: 24px
+      br
+        display: none
     @include media("<medium")
       margin-top: 20px
-      width: 69%
+      padding-right: 0px
+      br
+        display: block
     @include media("<small")
       width: 100%
       line-height: 160%

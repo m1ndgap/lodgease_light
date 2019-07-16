@@ -80,14 +80,14 @@ body {
   .landing-content__logo-title {
     margin: 0;
     padding: 0;
-    text-transform: capitalize;
+    text-transform: lowercase;
     color: #a1a1a1;
     font-size: 13px;
     padding-left: 30px;
     line-height: 150%;
     border-left: 1px solid #c4c4c4; }
   .landing-content__text-block {
-    margin-top: 22vh; }
+    margin-top: 16vh; }
     @media (max-width: 1279px) {
       .landing-content__text-block {
         margin-top: 7.5vh; } }
@@ -117,12 +117,16 @@ body {
     line-height: 170%; }
     @media (max-width: 1279px) {
       .landing-content__landing-text {
-        padding-right: 0;
-        margin-top: 24px; } }
+        padding-right: 10%;
+        margin-top: 24px; }
+        .landing-content__landing-text br {
+          display: none; } }
     @media (max-width: 991px) {
       .landing-content__landing-text {
         margin-top: 20px;
-        width: 69%; } }
+        padding-right: 0px; }
+        .landing-content__landing-text br {
+          display: block; } }
     @media (max-width: 767px) {
       .landing-content__landing-text {
         width: 100%;
