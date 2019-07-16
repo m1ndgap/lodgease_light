@@ -1,0 +1,98 @@
+$background: #fff
+$select-color: #000
+$select-background: #fff
+$select-width: 269px
+$select-height: 56px
+
+.select-hidden
+  display: none
+  visibility: hidden
+  padding-right: 20px
+
+
+.select
+  cursor: pointer
+  user-select: none
+  display: inline-block
+  position: relative
+  font-size: 16px
+  color: $white
+  width: 269px
+  height: 56px
+  @include font
+  font-size: 16px
+  text-transform: capitalize
+  margin-top: 30px
+  @include media('<large')
+    margin-top: 6vh
+  @include media('<medium')
+    margin-top: 3vh
+  @include media('<small')
+    width: 100%
+    max-width: 500px
+    margin-top: 33px
+
+
+
+.select-styled
+  position: absolute
+  top: 0
+  right: 0
+  bottom: 0
+  left: 0
+  background-color: $red
+  padding: 0 30px
+  line-height: $select-height
+
+  &:after
+    content: ""
+    width: 7px
+    height: 7px
+    border: 1px solid transparent
+    border-color: transparent transparent $white $white
+    position: absolute
+    transform: rotate(-45deg)
+    right: 36px
+    top: calc(28% + 6px)
+    transition: 300ms
+
+
+  &:active,
+  &.active
+    &:after
+      top: 44%
+      transform: rotate(135deg)
+
+
+
+
+
+.select-options
+  display: none
+  position: absolute
+  top: 100%
+  right: 0
+  left: 0
+  z-index: 999
+  margin: 0
+  padding: 0
+  list-style: none
+  background-color: $select-background
+  max-height: 250px
+  min-height: 150px
+  overflow: hidden
+  border: 1px solid $grey
+  transition: 300ms
+
+  li
+    margin: 0
+    padding: 12px 15px
+    text-indent: 15px
+    color: $black
+    &:hover
+      color: $black
+      background: lighten($grey, 30%)
+
+
+    &[rel="hide"]
+      display: none

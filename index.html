@@ -6,17 +6,43 @@
     <title></title>
   </head>
   <body>
+    <svg style="display: none">
+      <symbol id='logo'>
+      </symbol>
+    </svg>
   <div class="wrapper">
     <div class="landing-content">
       <div class="landing-content__container">
         <div class="landing-content__logo-group">
-          <svg class="landing-content__logo logo"></svg>
-          <p class="landing-content__logo-title">take hassle out of your holiday</p>
+          <img src="./img/logo.svg" class="landing-content__logo logo"></img>
+          <p class="landing-content__logo-title">take hassle out <br> of your holiday</p>
         </div>
         <div class="landing-content__text-block">
-          <h1 class="landing-content__text-title">Holiday essentials, Delivered to your destination</h1>
-          <p>From necessary items like diapers, strollers and beach umbrellas to new toys, devices and books — buy or rent all that you need to make this one amazing holiday!</p>
+          <h1 class="landing-content__text-title">Holiday essentials,<br> Delivered to your destination</h1>
+          <p class="landing-content__landing-text">From necessary items like diapers, strollers and beach umbrellas to new toys, devices and books — buy or rent all that you need to make this one amazing holiday!</p>
+          <form action="" class="landing-content__form">
+            <select name="" id="" class="landing-content__custom-select">
+              <option value="">Choose your destination</option>
+              <option value="">US</option>
+              <option value="">Europe</option>
+              <option value="">Asia</option>
+            </select>
+          </form>
+        </div>
 
+        <div class="landing-content__icons-block">
+          <div class="landing-content__icon-wrapper landing-content__icon-wrapper--seagull">
+            <img src="./img/seagull.svg" alt="seagull" class="landing-content__icon-img">
+            <span class="landing-content__icon-text">Travel <br> light</span>
+          </div>
+          <div class="landing-content__icon-wrapper landing-content__icon-wrapper--heart">
+            <img src="./img/heart.svg" alt="heart" class="landing-content__icon-img ">
+            <span class="landing-content__icon-text">Enjoy Errand-Free <br> Holidays</span>
+          </div>
+          <div class="landing-content__icon-wrapper landing-content__icon-wrapper--bike">
+            <img src="./img/bike.svg" alt="bike" class="landing-content__icon-img">
+            <span class="landing-content__icon-text">Discover <br> New Gear & Toys</span>
+          </div>
         </div>
       </div>
     </div>
@@ -28,7 +54,8 @@
       </picture>
     </div>
   </div>
-  <script type="text/javascript" src='./js/scripts.' >
+  <script src="./js/jquery-3.4.1.min.js" type="text/javascript"></script>
+  <script type="text/javascript" src='./js/scripts.js' >
 
   </script>
   </body>
